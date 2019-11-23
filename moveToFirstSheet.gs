@@ -3,6 +3,4 @@ function moveToFirstSheet(){
   var sheet = ss.getSheets()[0];
 
   sheet.activate();
-  putLinks();
 }
-

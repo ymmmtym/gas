@@ -7,4 +7,5 @@ function copyTemplateSheet(){
   newSheet.setName(newSheetName);
   ss.setActiveSheet(newSheet)
   ss.moveActiveSheet(sheets.length);
+
 }
