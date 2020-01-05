@@ -1,9 +1,11 @@
+// delete unused column
+
 function deleteBlank() {
-  const sheet = SpreadsheetApp.getActiveSheet();
+  const sheet = SpreadsheetApp.getActiveSheet()
 
-  const lastRow = sheet.getLastRow();
-  const columnBVals = sheet.getRange('A:A').getValues();
-  const LastStrRow = columnBVals.filter(String).length;
+  const lastRow = sheet.getLastRow()
+  const columnBVals = sheet.getRange('A:A').getValues()
+  const LastStrRow = columnBVals.filter(String).length
 
-  sheet.deleteRows(LastStrRow+1,lastRow-LastStrRow);
+  sheet.deleteRows(LastStrRow+1,lastRow-LastStrRow)
 }

@@ -1,16 +1,17 @@
-//チェックのついた問題を表示する
+// Pop up checked question
+
 function getCheckNumber() {
-  var mySheet=SpreadsheetApp.getActiveSheet(); //シートを取得
+  var mySheet=SpreadsheetApp.getActiveSheet()
  
-  var i=2;
-  var list = new Array();
-  while(mySheet.getRange(i,4).getValue()!=""){ //D列がNULLでない間繰り返し
-    if(mySheet.getRange(i,5).getValue()!=""){ //E列がNULLでなければ
-      list.push(mySheet.getRange(i,4).getValue()); //D列の値を配列に格納する
+  var i=2
+  var list = new Array()
+  while(mySheet.getRange(i,4).getValue()!=""){
+    if(mySheet.getRange(i,5).getValue()!=""){
+      list.push(mySheet.getRange(i,4).getValue())
     }
-    i++;
+    i++
   }
 
-  Browser.msgBox(list);
+  Browser.msgBox(list)
 }
 
