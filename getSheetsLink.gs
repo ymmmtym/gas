@@ -11,7 +11,7 @@ function getSheetsLink(){
 
   var linkList = [[]];
 
-  for(var i=0; i<sheets.length - 1; i++) {
+  for(var i=0; i<sheets.length - 2; i++) {
     var sheetId = sheets[i+1].getSheetId();
     var sheetName = sheets[i+1].getSheetName();
     var url = "https://docs.google.com/spreadsheets/d/" + ssId + "/edit#gid=" + sheetId;
