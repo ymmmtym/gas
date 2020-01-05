@@ -1,5 +1,4 @@
-function getSheetsLink()
-{
+function getSheetsLink(){
   // get sheets and id
   var sheets = SpreadsheetApp.getActive().getSheets();
   var ssId = SpreadsheetApp.getActive().getId();
