@@ -2,7 +2,7 @@ function getSheetsLink(){
   // get sheets and id
   var sheets = SpreadsheetApp.getActive().getSheets();
   var ssId = SpreadsheetApp.getActive().getId();
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('master');
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('graph');
 
   // clear first row
   var lastRow = sheet.getLastRow();
